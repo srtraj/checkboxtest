@@ -1,0 +1,17 @@
+{
+"title":{
+  "totalBox": "Total number of boxes to be displayed on each side",
+  "totalSelection": "Max No of Total Selection allowed for selecting on both the side",
+  "totalAlphabet": "Max No of Alphabets allowed for selecting",
+  "totalNumber": "Max No of Numbers allowed for selecting"
+},
+  "error": {
+    "maxNoSelectionReached":"Unable to select as Max No of SelectionsReached ( <maxNoSelection> )",
+    "maxNoAlphabetReached": "Unable to select as Max No of Alphabet reached ( <maxNoAlphabets> )",
+    "maxNoNumberReached":"Unable to select as Max No of Number reached ( <maxNoNumbers> )",
+    "maxNoOfBoxAllowed":"Only Max of 11 select boxes can be Created,enter value less than or equal to 11",
+    "maxNoOfAlphabet": "You cannot enter value more than <maxNoOfBox>  in Max No of Alphabets",
+    "maxNoOfNumber": "You cannot enter value more than <maxNoOfBox> in Max No of Numbers",
+    "maxNoOfSelections":"You cannot enter value more than <maxNoOfBox> in Max No of Selections"
+  }
+}
