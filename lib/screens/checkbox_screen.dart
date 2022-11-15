@@ -635,7 +635,7 @@ class StatusWidget extends StatelessWidget {
                         ? ""
                         : errorMessage == "success"
                             ? "Success"
-                            : errorMessage,
+                            : "Error : $errorMessage",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
