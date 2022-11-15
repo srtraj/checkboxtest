@@ -23,7 +23,6 @@ class _CheckBoxScreenState extends State<CheckBoxScreen> {
 
   @override
   void initState() {
-    readJson();
     _cntMaxNoBox = TextEditingController();
     _cntMaxNoSelection = TextEditingController();
     _cntMaxNoAlphabets = TextEditingController();
@@ -41,6 +40,9 @@ class _CheckBoxScreenState extends State<CheckBoxScreen> {
     _cntMaxNoNumbers.addListener(() {
       setState(() {});
     });
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
+      await readJson();
+    });
     super.initState();
   }
 
@@ -49,6 +51,7 @@ class _CheckBoxScreenState extends State<CheckBoxScreen> {
     final data = await json.decode(response);
     metaData = MetaTextModel.fromJson(data);
     isLoading = false;
+    setState(() {});
   }
 
   @override
